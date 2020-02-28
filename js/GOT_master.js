@@ -1,28 +1,35 @@
+// JavaScript Document
+
 (() => {
+	// variables at the top -> elemtns on the page we need to work with
+	let sigilButtons = document.querySelectorAll('.sigilContainer'),
+		// this will go and get the buttons at the bottom and create a NODE LIST
+		lightBox = document.querySelector('.lightbox'),
+		gotVideo = lightBox.querySelector('video'),
+		closeLightBox = lightBox.querySelector(".lightbox-close");
 
-//variables at the top -> elements on the page we need to work with
-let sigilButtons = document.querySelectorAll(".sigilContainer");
-	lightBox = document.querySelector(".lightbox");
-	closeLightBox = lightBox.querySelector(".lightbox-close");
+	// events go in the middle
+	function showLightBox() {
+		//pop open a lightbox here and show some content
+		// start with a video 
+		//debugger;
+
+		lightBox.classList.add('show-lightbox');
+	}
+
+	function hideLightBox() {
+		lightBox.classList.remove("show-lightbox");
+
+		gotVideo.pause();
+		gotVideo.currentTime = 0;
+	}
 
 
-//events go in the middle
-function showLightbox() {
-	//pop open a lightbox here and show some content
-	//start with a video
-	//debugger;
+		// add a click event to the sigilButtons
+		sigilButtons.forEach(button => button.addEventListener("click", showLightBox))
 
-	lightBox.classList.add("show-lightbox");
-}
+		// add an event handler for the lightbox close button
 
-function hideLightBox() {
-	lightBox.classList.remove("show-lightbox");
-}
-
-// add a click event to the sigilButtons
-sigilButtons.forEach(button => button.addEventListener("click", showLightbox))
-
-//add and event handler for the lightbox close button
-closeLightBox.addEventListener("click", hideLightBox);
+		closeLightBox.addEventListener("click", hideLightBox)
 
 })();

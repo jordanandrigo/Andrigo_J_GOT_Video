@@ -38,26 +38,17 @@
     <p class="house-info"></p><!-- replace this with house details (github gist) -->
 </main>  <!--end mainContainer-->
 
-<!-- lightbox goes here at the top of the stack -->
-<section class="lightbox">
-    <span class="lightbox-close">X</span>
-    <!-- show current house video -->
-    <video src=""></video>
-</section>
+<!--- LIGHTBOX -->
+    <section class="lightbox">
+        <span class="lightbox-close">X</span>
+        <!-- show current house video -->
+        <video class="video-player" src="video/House-Stark.mp4" controls></video>
+        <button class="play-pause">Pause</button>
+        <button class="play-pause">Rewind</button>
+        <!-- now we need to toggle pause and play in JS. Add buttons for volume and scrubbing... we need to style these controls w/ CSS. -->
+    </section>
+        
 
 <script src="js/GOT_master.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-

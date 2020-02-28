@@ -97,22 +97,34 @@ main {
 }
 
 /* add styles here for lightbox and video */
+
 .lightbox {
-	color: white;
 	display: none;
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0,0,0,0.8);
 
 	position: absolute;
 	top: 0;
 	width: 100vw;
 	height: 100vh;
-	cursor: pointer;
 }
 
 .show-lightbox {
 	display: block;
 }
 
+.lightbox-close {
+	color: white;
+	padding-right: 50px;
+	float: right;
+	display: block;
+	font-size: 30px;
+	cursor: pointer;
+	padding-top: 20px;
+}
+
+.video-player {
+
+}
 
 
 video {
