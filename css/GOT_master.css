@@ -11,8 +11,11 @@
 
 /* ----- default styles ----- */
 body { background-image:url(../images/grungeBG.jpg);
-	background-repeat:no-repeat; background-position:center center;
-	background-color:#000000; font-size:16px; }
+	background-repeat:no-repeat; 
+	background-position:center center;
+	background-color:#000000; 
+	font-size:16px; 
+}
 
 h1 {
 	font-family: 'GOT_font';
@@ -36,7 +39,12 @@ main {
 	overflow:hidden;
 }
 
-#houseImages { position:relative; width:4000px; transition: all .5s; }
+#houseImages { 
+	position: relative; 
+	width: 4000px; t
+	ransition: all .5s; 
+}
+
 #houseImages img { float:left; }
 
 #bottomNav { margin-top:30px; }
@@ -131,4 +139,12 @@ video {
 	width: 80%;
 	margin-top: 10%;
 	border: thin solid #949393;
+}
+
+.house-info {
+	color: white;
+	font-size: 1.5em;
+	line-height: 1.5;
+	width: 75%;
+	margin: 0 auto;
 }
