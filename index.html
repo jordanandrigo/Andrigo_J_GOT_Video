@@ -33,21 +33,21 @@
         </ul>
     </nav>
 
-    <h1>clever tagline goes here</h1><!-- replace this with the house name -->
+    <h1>Choose any of the shields!</h1><!-- replace this with the house name -->
 
-    <p class="house-info"></p><!-- replace this with house details (github gist) -->
+    <p class="house-info">The shields reveal information to learn more about the Game of Thrones!</p><!-- replace this with house details (github gist) -->
 </main>  <!--end mainContainer-->
+<!-- in body outside of main -->
+<section class="lightBox"><!--Start Light box Section-->
+  <span class="lightBoxClose">X</span>
 
-<!--- LIGHTBOX -->
-    <section class="lightbox">
-        <span class="lightbox-close">X</span>
-        <!-- show current house video -->
-        <video class="video-player" src="video/House-Stark.mp4" controls></video>
-        <button class="play-pause">Pause</button>
-        <button class="play-pause">Rewind</button>
-        <!-- now we need to toggle pause and play in JS. Add buttons for volume and scrubbing... we need to style these controls w/ CSS. -->
-    </section>
-        
+  <!--  show the current house video -->
+  <video class="lightBoxVideo" src="video/House-Stark.mp4"></video>
+  <!-- dont want to use the defults want to make the controls match the site -->
+  <button id="play" class="playPause button">Pause</button>
+  <button id="mute" class="button">Mute</button>
+
+</section>
 
 <script src="js/GOT_master.js"></script>
 </body>

@@ -11,11 +11,8 @@
 
 /* ----- default styles ----- */
 body { background-image:url(../images/grungeBG.jpg);
-	background-repeat:no-repeat; 
-	background-position:center center;
-	background-color:#000000; 
-	font-size:16px; 
-}
+	background-repeat:no-repeat; background-position:center center;
+	background-color:#000000; font-size:16px; }
 
 h1 {
 	font-family: 'GOT_font';
@@ -39,12 +36,7 @@ main {
 	overflow:hidden;
 }
 
-#houseImages { 
-	position: relative; 
-	width: 4000px; t
-	ransition: all .5s; 
-}
-
+#houseImages { position:relative; width:4000px; transition: all .5s; }
 #houseImages img { float:left; }
 
 #bottomNav { margin-top:30px; }
@@ -105,46 +97,60 @@ main {
 }
 
 /* add styles here for lightbox and video */
-
-.lightbox {
-	display: none;
-	background-color: rgba(0,0,0,0.8);
-
-	position: absolute;
-	top: 0;
-	width: 100vw;
-	height: 100vh;
+.lightBox{
+  display: none;
+  background-color: rgba(0,0,0,.8);
+  position:absolute;
+  top:0;
+  width: 100vw; /* 100% of the viewport width*/
+  height: 100vh;
+  align-items: center;
+  text-align: center;
 }
 
-.show-lightbox {
-	display: block;
+.show-lightBox {
+  display:block;
 }
 
-.lightbox-close {
-	color: white;
-	padding-right: 50px;
-	float: right;
-	display: block;
-	font-size: 30px;
-	cursor: pointer;
-	padding-top: 20px;
+.lightBoxClose {
+  color: white;
+  float: right;
+  display: block;
+  font-size: 50px;
+  margin-right: 5%;
+  margin-top: 5%;
+  cursor: pointer;
 }
-
-.video-player {
-
-}
-
 
 video {
+  display: block;
+  margin-left: 10%;
 	width: 80%;
-	margin-top: 10%;
+	margin-top: 5%;
 	border: thin solid #949393;
 }
 
 .house-info {
-	color: white;
-	font-size: 1.5em;
-	line-height: 1.5;
-	width: 75%;
-	margin: 0 auto;
+    color: white;
+    font-size: 1.5em;
+    line-height: 1.5;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.button {
+    font-family: 'GOT_font';
+    font-size: 14px;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 5px 15px 5px 15px;
+}
+
+label {
+    padding: 5px 15px 5px 15px;
+    font-size: 14px;
+    font-family: 'GOT_font';
+    justify-content: center;
+    margin-top: 15px;
+    color: #fff;
 }
